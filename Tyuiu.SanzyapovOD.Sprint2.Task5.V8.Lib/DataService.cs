@@ -41,7 +41,8 @@ namespace Tyuiu.SanzyapovOD.Sprint2.Task5.V8.Lib
                     n = n - 1;
                     break;
             }
-            res = ($"{n}.{m}");
+            if (m < 10) res = ($"{n}.0{m}");
+            else res = ($"{n}.{m}");
             return res;
         }
     }
